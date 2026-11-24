@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO: aparece en la pestaña del navegador y en Google -->
+    <!-- Máximo 60 caracteres -->
+    <title>Al-Oud & Nicho — Perfumes Árabes y Nicho en Perú</title>
+
+    <!-- DESCRIPCIÓN: texto que aparece debajo del título en Google -->
+    <!-- Máximo 155 caracteres -->
+    <meta name="description"
+          content="Tienda de perfumes árabes originales y perfumería nicho en Perú. Catálogo con Lattafa, Armaf, Afnan, Creed, Xerjoff y Parfums de Marly.">
+
+    <!-- PALABRAS CLAVE -->
+    <meta name="keywords"
+          content="perfumes arabes, perfumes nicho, lattafa khamrah, creed aventus, xerjoff, parfums de marly, armaf, afnan">
+
+    <!-- INSTRUCCIONES PARA LOS MOTORES DE BÚSQUEDA -->
+    <meta name="robots" content="index, follow">
+
+    <!-- AUTOR DEL SITIO -->
+    <meta name="author" content="Alexis Urbano">
+
+    <!-- TIPO DE CONTENIDO -->
+    <meta property="og:type"        content="website">
+
+    <!-- URL CANÓNICA DE ESTA PÁGINA (debe ser absoluta) -->
+    <meta property="og:url"         content="https://perfumes-arabes-nichos.vercel.app/">
+
+    <!-- TÍTULO PARA REDES SOCIALES -->
+    <meta property="og:title"       content="Al-Oud & Nicho — Perfumes Árabes y Nicho en Perú">
+
+    <!-- DESCRIPCIÓN PARA REDES SOCIALES -->
+    <meta property="og:description" content="Catálogo de 20 perfumes árabes y de nicho originales con envíos a todo el Perú.">
+
+    <!-- IMAGEN AL COMPARTIR (URL absoluta, mínimo 1200×630 px) -->
+    <meta property="og:image"       content="https://perfumes-arabes-nichos.vercel.app/img/preview.jpg">
+
+    <!-- IDIOMA Y REGIÓN -->
+    <meta property="og:locale"      content="es_PE">
+
+    <!-- NOMBRE DEL SITIO -->
+    <meta property="og:site_name"   content="Al-Oud & Nicho">
+
+    <!-- Etiquetas Twitter / X -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Al-Oud & Nicho — Perfumes Árabes y Nicho en Perú">
+    <meta name="twitter:description" content="Catálogo de 20 perfumes árabes y de nicho originales en Perú.">
+    <meta name="twitter:image"       content="https://perfumes-arabes-nichos.vercel.app/img/preview.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="contenedor nav-barra">
+            <a href="index.html" class="logo">
+                <img src="img/logos/logo-tienda.jpg" alt="Logo Al-Oud & Nicho">
+                <div class="logo-texto">
+                    <h1>Al-Oud & Nicho</h1>
+                    <span>Perfumería Árabe y de Nicho</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="activo">Inicio</a></li>
+                    <li><a href="catalogo.html">Tabla de Precios</a></li>
+                    <li><a href="#marcas">Marcas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li>
+                        <button type="button" id="btn-carrito" class="caja-carrito" onclick="verCarrito()">
+                            Carrito (0) - S/ 0
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner principal -->
+        <section class="banner">
+            <div class="contenedor">
+                <h2>Perfumes Árabes y Perfumería Nicho en Perú</h2>
+                <p>
+                    Descubre nuestra colección seleccionada de 20 fragancias originales de Dubái, Francia e Italia. Alta duración, proyección y aromas exclusivos para cada estilo.
+                </p>
+                <a href="#catalogo" class="btn-principal">Ver Catálogo de 20 Perfumes</a>
+            </div>
+        </section>
+
+        <!-- Seccion de logos de marcas -->
+        <section id="marcas" class="seccion-marcas">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <h2>Marcas con las que Trabajamos</h2>
+                    <p>Casas perfumistas árabes y de nicho reconocidas a nivel mundial</p>
+                </div>
+
+                <div class="lista-logos">
+                    <div class="item-logo">
+                        <img src="img/logos/logo-lattafa.jpg" alt="Logo Lattafa">
+                        <span>Lattafa</span>
+                    </div>
+                    <div class="item-logo">
+                        <img src="img/logos/logo-armaf.jpg" alt="Logo Armaf">
+                        <span>Armaf</span>
+                    </div>
+                    <div class="item-logo">
+                        <img src="img/logos/logo-afnan.jpg" alt="Logo Afnan">
+                        <span>Afnan</span>
+                    </div>
+                    <div class="item-logo">
+                        <img src="img/logos/logo-alharamain.jpg" alt="Logo Al Haramain">
+                        <span>Al Haramain</span>
+                    </div>
+                    <div class="item-logo">
+                        <img src="img/logos/logo-creed.jpg" alt="Logo Creed">
+                        <span>Creed</span>
+                    </div>
+                    <div class="item-logo">
+                        <img src="img/logos/logo-pdm.jpg" alt="Logo Parfums de Marly">
+                        <span>Parfums de Marly</span>
+                    </div>
+                    <div class="item-logo">
+                        <img src="img/logos/logo-xerjoff.jpg" alt="Logo Xerjoff">
+                        <span>Xerjoff</span>
+                    </div>
+                    <div class="item-logo">
+                        <img src="img/logos/logo-mfk.jpg" alt="Logo Maison Francis Kurkdjian">
+                        <span>Maison Francis Kurkdjian</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion del catalogo con 20 perfumes -->
+        <section id="catalogo" class="seccion-catalogo">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <h2>Catálogo de Perfumes (20 Fragancias)</h2>
+                    <p>Filtra por tipo de perfume o usa el buscador para encontrar tu fragancia</p>
+                </div>
+
+                <!-- Botones de filtro y buscador -->
+                <div class="controles-catalogo">
+                    <div class="filtros">
+                        <button type="button" class="btn-filtro activo" onclick="filtrarCategoria('todos', this)">Todos (20)</button>
+                        <button type="button" class="btn-filtro" onclick="filtrarCategoria('arabe', this)">Árabes (10)</button>
+                        <button type="button" class="btn-filtro" onclick="filtrarCategoria('nicho', this)">Nicho (10)</button>
+                        <button type="button" class="btn-filtro" onclick="filtrarCategoria('dulce', this)">Dulces / Gourmand</button>
+                        <button type="button" class="btn-filtro" onclick="filtrarCategoria('amaderado', this)">Amaderados / Oud</button>
+                        <button type="button" class="btn-filtro" onclick="filtrarCategoria('fresco', this)">Frescos / Frutales</button>
+                    </div>
+
+                    <input type="text" id="input-buscar" class="buscador" placeholder="Buscar perfume o marca...">
+                </div>
+
+                <p id="texto-contador" class="contador-texto">Mostrando 20 de 20 perfumes</p>
+
+                <!-- Grilla con las 20 tarjetas -->
+                <div class="grid-perfumes">
+
+                    <!-- 1. Lattafa Khamrah -->
+                    <article class="card" data-tipo="arabe" data-familia="dulce gourmand">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p01-lattafa-khamrah.jpg" alt="Lattafa Khamrah">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Lattafa</span>
+                            <h3>Khamrah EDP</h3>
+                            <span class="familia">Dulce / Especiado</span>
+                            <p class="notas">Notas: Canela, dátiles, praliné, vainilla y haba tonka.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 165.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Lattafa Khamrah', 165)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Lattafa Asad -->
+                    <article class="card" data-tipo="arabe" data-familia="amaderado especiado">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Hombre</span>
+                            <img src="img/perfumes/p02-lattafa-asad.jpg" alt="Lattafa Asad">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Lattafa</span>
+                            <h3>Asad</h3>
+                            <span class="familia">Amaderado / Especiado</span>
+                            <p class="notas">Notas: Pimienta negra, tabaco, café, vainilla y ámbar.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 145.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Lattafa Asad', 145)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. Lattafa Yara -->
+                    <article class="card" data-tipo="arabe" data-familia="dulce floral">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Mujer</span>
+                            <img src="img/perfumes/p03-lattafa-yara.jpg" alt="Lattafa Yara">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Lattafa</span>
+                            <h3>Yara Pink</h3>
+                            <span class="familia">Dulce / Tropical</span>
+                            <p class="notas">Notas: Orquídea, frutas tropicales, vainilla y almizcle.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 140.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Lattafa Yara', 140)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Lattafa Bade'e Al Oud -->
+                    <article class="card" data-tipo="arabe" data-familia="amaderado oud">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p04-badee-al-oud.jpg" alt="Lattafa Badee Al Oud">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Lattafa</span>
+                            <h3>Bade'e Al Oud</h3>
+                            <span class="familia">Oud / Amaderado</span>
+                            <p class="notas">Notas: Azafrán, nuez moscada, madera de oud y pachulí.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 160.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Lattafa Badee Al Oud', 160)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. Armaf Club de Nuit Intense Man -->
+                    <article class="card" data-tipo="arabe" data-familia="fresco amaderado">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Hombre</span>
+                            <img src="img/perfumes/p05-club-de-nuit.jpg" alt="Club de Nuit Intense Man">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Armaf</span>
+                            <h3>Club de Nuit Intense Man</h3>
+                            <span class="familia">Cítrico / Ahumado</span>
+                            <p class="notas">Notas: Limón, piña, bergamota, abedul y almizcle.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 175.00 <small>105 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Club de Nuit Intense', 175)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. Afnan 9pm -->
+                    <article class="card" data-tipo="arabe" data-familia="dulce gourmand">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Hombre</span>
+                            <img src="img/perfumes/p06-afnan-9pm.jpg" alt="Afnan 9pm">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Afnan</span>
+                            <h3>9pm EDP</h3>
+                            <span class="familia">Dulce / Avainillado</span>
+                            <p class="notas">Notas: Manzana, canela, lavanda, vainilla y haba tonka.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 155.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Afnan 9pm', 155)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 7. Al Haramain Amber Oud Gold Edition -->
+                    <article class="card" data-tipo="arabe" data-familia="fresco dulce">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p07-amber-oud-gold.jpg" alt="Al Haramain Amber Oud Gold">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Al Haramain</span>
+                            <h3>Amber Oud Gold Edition</h3>
+                            <span class="familia">Frutal / Dulce</span>
+                            <p class="notas">Notas: Bergamota, melón, piña, vainilla y almizcle.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 240.00 <small>120 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Amber Oud Gold Edition', 240)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 8. Rasasi Hawas for Him -->
+                    <article class="card" data-tipo="arabe" data-familia="fresco acuatico">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Hombre</span>
+                            <img src="img/perfumes/p08-rasasi-hawas.jpg" alt="Rasasi Hawas">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Rasasi</span>
+                            <h3>Hawas for Him</h3>
+                            <span class="familia">Fresco / Acuático</span>
+                            <p class="notas">Notas: Manzana, bergamota, notas acuáticas y ámbar gris.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 210.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Rasasi Hawas', 210)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 9. Maison Alhambra Kismet Angel -->
+                    <article class="card" data-tipo="arabe" data-familia="dulce gourmand">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p09-kismet-angel.jpg" alt="Kismet Angel">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Maison Alhambra</span>
+                            <h3>Kismet Angel</h3>
+                            <span class="familia">Gourmand / Miel</span>
+                            <p class="notas">Notas: Miel, canela, coñac, chocolate y vainilla.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 150.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Kismet Angel', 150)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 10. Bharara King -->
+                    <article class="card" data-tipo="arabe" data-familia="fresco dulce">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-arabe">Árabe</span>
+                            <span class="genero">Hombre</span>
+                            <img src="img/perfumes/p10-bharara-king.jpg" alt="Bharara King">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Bharara</span>
+                            <h3>Bharara King</h3>
+                            <span class="familia">Frutal / Vainilla</span>
+                            <p class="notas">Notas: Naranja, limón, bergamota, frutas y vainilla.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 280.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Bharara King', 280)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 11. Creed Aventus -->
+                    <article class="card" data-tipo="nicho" data-familia="fresco amaderado">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Hombre</span>
+                            <img src="img/perfumes/p11-creed-aventus.jpg" alt="Creed Aventus">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Creed</span>
+                            <h3>Creed Aventus</h3>
+                            <span class="familia">Frutal / Amaderado</span>
+                            <p class="notas">Notas: Piña, bergamota, abedul, musgo de roble y ámbar gris.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 1450.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Creed Aventus', 1450)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 12. MFK Baccarat Rouge 540 -->
+                    <article class="card" data-tipo="nicho" data-familia="dulce amaderado">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p12-baccarat-rouge-540.jpg" alt="Baccarat Rouge 540">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Maison Francis Kurkdjian</span>
+                            <h3>Baccarat Rouge 540</h3>
+                            <span class="familia">Ámbar / Floral</span>
+                            <p class="notas">Notas: Azafrán, jazmín, amberwood, resina de abeto y cedro.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 1380.00 <small>70 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Baccarat Rouge 540', 1380)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 13. Parfums de Marly Layton -->
+                    <article class="card" data-tipo="nicho" data-familia="dulce amaderado">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Hombre</span>
+                            <img src="img/perfumes/p13-pdm-layton.jpg" alt="Parfums de Marly Layton">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Parfums de Marly</span>
+                            <h3>Layton</h3>
+                            <span class="familia">Especiado / Vainilla</span>
+                            <p class="notas">Notas: Manzana, lavanda, cardamomo, vainilla y madera de gaiac.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 1150.00 <small>125 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Parfums de Marly Layton', 1150)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 14. Parfums de Marly Delina -->
+                    <article class="card" data-tipo="nicho" data-familia="fresco dulce">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Mujer</span>
+                            <img src="img/perfumes/p14-pdm-delina.jpg" alt="Parfums de Marly Delina">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Parfums de Marly</span>
+                            <h3>Delina</h3>
+                            <span class="familia">Floral / Frutal</span>
+                            <p class="notas">Notas: Lichi, ruibarbo, rosa turca, peonía y vainilla.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 1180.00 <small>75 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Parfums de Marly Delina', 1180)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 15. Xerjoff Erba Pura -->
+                    <article class="card" data-tipo="nicho" data-familia="fresco dulce">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p15-xerjoff-erba-pura.jpg" alt="Xerjoff Erba Pura">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Xerjoff</span>
+                            <h3>Erba Pura</h3>
+                            <span class="familia">Frutal / Cítrico</span>
+                            <p class="notas">Notas: Naranja, limón, frutas mediterráneas, vainilla y almizcle.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 1050.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Xerjoff Erba Pura', 1050)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 16. Xerjoff Naxos -->
+                    <article class="card" data-tipo="nicho" data-familia="dulce amaderado">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p16-xerjoff-naxos.jpg" alt="Xerjoff Naxos">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Xerjoff</span>
+                            <h3>XJ 1861 Naxos</h3>
+                            <span class="familia">Tabaco / Miel</span>
+                            <p class="notas">Notas: Lavanda, miel, canela, hoja de tabaco y haba tonka.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 1120.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Xerjoff Naxos', 1120)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 17. Mancera Red Tobacco -->
+                    <article class="card" data-tipo="nicho" data-familia="amaderado oud">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p17-mancera-red-tobacco.jpg" alt="Mancera Red Tobacco">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Mancera</span>
+                            <h3>Red Tobacco</h3>
+                            <span class="familia">Tabaco / Oud</span>
+                            <p class="notas">Notas: Canela, madera de oud, tabaco, incienso y vainilla.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 520.00 <small>120 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Mancera Red Tobacco', 520)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 18. Montale Intense Cafe -->
+                    <article class="card" data-tipo="nicho" data-familia="dulce gourmand">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p18-montale-intense-cafe.jpg" alt="Montale Intense Cafe">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Montale</span>
+                            <h3>Intense Café</h3>
+                            <span class="familia">Café / Vainilla</span>
+                            <p class="notas">Notas: Rosa, café tostado, vainilla, ámbar y almizcle blanco.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 480.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Montale Intense Cafe', 480)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 19. By Kilian Angels Share -->
+                    <article class="card" data-tipo="nicho" data-familia="dulce gourmand">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p19-kilian-angels-share.jpg" alt="Kilian Angels Share">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">By Kilian</span>
+                            <h3>Angels' Share</h3>
+                            <span class="familia">Coñac / Gourmand</span>
+                            <p class="notas">Notas: Coñac, canela, roble, haba tonka, praliné y vainilla.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 1090.00 <small>50 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Kilian Angels Share', 1090)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 20. Nishane Hacivat -->
+                    <article class="card" data-tipo="nicho" data-familia="fresco amaderado">
+                        <div class="card-img">
+                            <span class="etiqueta etiqueta-nicho">Nicho</span>
+                            <span class="genero">Unisex</span>
+                            <img src="img/perfumes/p20-nishane-hacivat.jpg" alt="Nishane Hacivat">
+                        </div>
+                        <div class="card-info">
+                            <span class="marca">Nishane</span>
+                            <h3>Hacivat</h3>
+                            <span class="familia">Cítrico / Amaderado</span>
+                            <p class="notas">Notas: Piña, pomelo, bergamota, cedro, pachulí y musgo de roble.</p>
+                            <div class="card-pie">
+                                <div class="precio">S/ 980.00 <small>100 ml</small></div>
+                                <button type="button" class="btn-comprar" onclick="agregarCarrito('Nishane Hacivat', 980)">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion informativa inferior -->
+        <section class="seccion-contenido">
+            <div class="contenedor dos-columnas">
+                <div class="caja-blanca">
+                    <h3>Diferencias entre Perfumes Árabes y Nicho</h3>
+                    <p>Ambos tipos destacan por su gran duración en comparación con la perfumería comercial:</p>
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Aspecto</th>
+                                <th>Perfumería Árabe</th>
+                                <th>Perfumería Nicho</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Origen</td>
+                                <td>Emiratos Árabes Unidos</td>
+                                <td>Francia, Italia, Turquía</td>
+                            </tr>
+                            <tr>
+                                <td>Notas típicas</td>
+                                <td>Oud, especias, ámbar, vainilla</td>
+                                <td>Ingredientes naturales de autor</td>
+                            </tr>
+                            <tr>
+                                <td>Precios</td>
+                                <td>S/ 140 a S/ 280</td>
+                                <td>S/ 480 a S/ 1450</td>
+                            </tr>
+                            <tr>
+                                <td>Duración</td>
+                                <td>8 a 12 horas</td>
+                                <td>10 a 16 horas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="caja-blanca">
+                    <h3>Consultas y Pedidos</h3>
+                    <p>Déjanos tu consulta si buscas algún perfume en especial:</p>
+                    <form onsubmit="enviarConsulta(event)" style="margin-top: 12px;">
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" required placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="tipo-perfume">Categoría de interés:</label>
+                            <select id="tipo-perfume">
+                                <option value="arabe">Perfumes Árabes</option>
+                                <option value="nicho">Perfumes de Nicho</option>
+                                <option value="ambos">Ambos catálogos</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-principal" style="width: 100%;">Enviar Consulta</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-columnas">
+                <div>
+                    <h4>Al-Oud & Nicho Perú</h4>
+                    <p>Tienda online de perfumes árabes originales y perfumería nicho con envíos a nivel nacional.</p>
+                </div>
+                <div>
+                    <h4>Páginas del Sitio</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Tabla de Precios</a></li>
+                        <li><a href="nosotros.html">Nosotros y Contacto</a></li>
+                        <li><a href="sitemap.xml">Sitemap XML</a></li>
+                        <li><a href="robots.txt">Robots.txt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Lima, Perú</li>
+                        <li>Correo: ventas@aloudnicho.pe</li>
+                        <li>Teléfono: +51 987 654 321</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-final">
+                2026 Al-Oud & Nicho Perú - Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO: aparece en la pestaña del navegador y en Google -->
+    <!-- Máximo 60 caracteres -->
+    <title>Nosotros y Contacto — Al-Oud & Nicho Perú</title>
+
+    <!-- DESCRIPCIÓN: texto que aparece debajo del título en Google -->
+    <!-- Máximo 155 caracteres -->
+    <meta name="description"
+          content="Conoce nuestra tienda de perfumería árabe y nicho en Perú. Contáctanos para asesoría y pedidos de fragancias originales.">
+
+    <!-- PALABRAS CLAVE -->
+    <meta name="keywords"
+          content="contacto perfumes arabes, tienda perfumes nicho lima, comprar perfumes arabes peru">
+
+    <!-- INSTRUCCIONES PARA LOS MOTORES DE BÚSQUEDA -->
+    <meta name="robots" content="index, follow">
+
+    <!-- AUTOR DEL SITIO -->
+    <meta name="author" content="Alexis Urbano">
+
+    <!-- Etiquetas Open Graph (redes sociales) -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://perfumes-arabes-nichos.vercel.app/nosotros.html">
+    <meta property="og:title"       content="Nosotros y Contacto — Al-Oud & Nicho Perú">
+    <meta property="og:description" content="Conoce nuestra tienda de perfumería árabe y nicho en Lima, Perú.">
+    <meta property="og:image"       content="https://perfumes-arabes-nichos.vercel.app/img/preview.jpg">
+    <meta property="og:locale"      content="es_PE">
+    <meta property="og:site_name"   content="Al-Oud & Nicho">
+
+    <!-- Etiquetas Twitter / X -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Nosotros y Contacto — Al-Oud & Nicho Perú">
+    <meta name="twitter:description" content="Contáctanos para consultas sobre perfumes árabes y nicho en Perú.">
+    <meta name="twitter:image"       content="https://perfumes-arabes-nichos.vercel.app/img/preview.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor nav-barra">
+            <a href="index.html" class="logo">
+                <img src="img/logos/logo-tienda.jpg" alt="Logo Al-Oud & Nicho">
+                <div class="logo-texto">
+                    <h1>Al-Oud & Nicho</h1>
+                    <span>Perfumería Árabe y de Nicho</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Tabla de Precios</a></li>
+                    <li><a href="index.html#marcas">Marcas</a></li>
+                    <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-contenido">
+            <div class="contenedor dos-columnas">
+                <div class="caja-blanca">
+                    <h3>Sobre Nosotros</h3>
+                    <p style="margin-bottom: 12px;">
+                        Somos una tienda peruana dedicada a la venta de perfumes árabes importados de Emiratos Árabes Unidos (Lattafa, Armaf, Afnan, Al Haramain, Rasasi) y perfumes de nicho europeos (Creed, Parfums de Marly, Xerjoff, Maison Francis Kurkdjian, Mancera y Montale).
+                    </p>
+                    <p style="margin-bottom: 12px;">
+                        Nuestro objetivo es ofrecer fragancias 100% originales con excelente fijación y precios justos, brindando asesoría para que cada cliente encuentre el aroma ideal según la ocasión.
+                    </p>
+                    <h4 style="margin-top: 16px; margin-bottom: 8px;">Datos de Contacto:</h4>
+                    <ul style="margin-left: 18px; font-size: 0.9rem;">
+                        <li>Dirección: Santa Anita, Lima - Perú</li>
+                        <li>Horario: Lunes a Sábado de 9:00 am a 7:00 pm</li>
+                        <li>Correo: ventas@aloudnicho.pe</li>
+                        <li>WhatsApp: 987 654 321</li>
+                    </ul>
+                </div>
+
+                <div class="caja-blanca">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form onsubmit="enviarConsulta(event)">
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" required placeholder="tucorreo@ejemplo.com">
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" rows="4" required placeholder="Escribe tu consulta aquí..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-principal" style="width: 100%;">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-final">
+                2026 Al-Oud & Nicho Perú - <a href="index.html">Volver al Inicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

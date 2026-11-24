@@ -1,0 +1,12 @@
+# robots.txt
+# Instrucciones para los motores de búsqueda
+
+User-agent: *
+Allow: /
+
+# Bloquear carpetas que no deben indexarse (ajustar según el proyecto)
+Disallow: /admin/
+Disallow: /privado/
+
+# Ubicación del mapa del sitio
+Sitemap: https://perfumes-arabes-nichos.vercel.app/sitemap.xml
